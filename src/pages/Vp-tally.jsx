@@ -109,46 +109,49 @@ const VpElectionResultsTable = () => {
     };
 
     const handleReverseName = (name) => {
-        const words = name.split(' ');
-
-        const reversedWords = [];
-
-        words.forEach(word => {
-            const len = word.length;
-            let reversedWord = '';
-
-            if (len % 2 === 0) {
-            reversedWord = word.split('').reverse().join('');
-            } else {
-            const mid = Math.floor(len / 2);
-            const beforeMid = word.slice(0, mid).split('').reverse().join('');
-            const middle = word[mid];
-            const afterMid = word.slice(mid + 1).split('').reverse().join('');
-            reversedWord = beforeMid + middle + afterMid;
-            }
-            reversedWords.push(reversedWord);
-        });
-        return reversedWords.join(' ');
-    }
+      const words = name.split(' ');
+  
+      const reversedWords = words.map(word => {
+          const len = word.length;
+          const mid = Math.floor(len / 2);
+          let beforeMid, afterMid;
+  
+          if (len % 2 === 0) {
+              beforeMid = word.slice(0, mid).split('').reverse().join('');
+              afterMid = word.slice(mid).split('').reverse().join('');
+              return beforeMid + afterMid;
+          } else {
+              beforeMid = word.slice(0, mid).split('').reverse().join('');
+              const middle = word[mid];
+              afterMid = word.slice(mid + 1).split('').reverse().join('');
+              return beforeMid + middle + afterMid;
+          }
+      });
+  
+      return reversedWords.join(' ');
+    };
+    
+    
 
     const handleReverseVotes = (vote) => {
-        const voteStr = vote.toString().replace(/,/g, '');
-        const reversedVotes = [];
-            const len = voteStr.length;
-            let reversedVote = '';
+      const voteStr = vote.toString(); 
+      const len = voteStr.length;
+      let reversedVote = '';
 
-            if (len % 2 === 0) {
-            reversedVote = voteStr.split('').reverse().join('');
-            } else {
-            const mid = Math.floor(len / 2);
-            const beforeMid = voteStr.slice(0, mid).split('').reverse().join('');
-            const middle = voteStr[mid];
-            const afterMid = voteStr.slice(mid + 1).split('').reverse().join('');
-            reversedVote = beforeMid + middle + afterMid;
-            }
-            reversedVotes.push(reversedVote);
-        return parseFloat(reversedVotes);
-    }
+      if (len % 2 === 0) {
+          const beforeMid = voteStr.slice(0, len / 2).split('').reverse().join('');
+          const afterMid = voteStr.slice(len / 2).split('').reverse().join('');
+          reversedVote = beforeMid + afterMid;
+      } else {
+          const mid = Math.floor(len / 2);
+          const beforeMid = voteStr.slice(0, mid).split('').reverse().join('');
+          const middle = voteStr[mid];
+          const afterMid = voteStr.slice(mid + 1).split('').reverse().join('');
+          reversedVote = beforeMid + middle + afterMid;
+      }
+
+      return reversedVote;
+    };
 
     const sortedCandidates = [
         { name: candidateKiko, votes: totalKiko },
