@@ -1,0 +1,148 @@
+{
+    "vice_presidential_candidates": {
+        "Kiko Pangilinan": {
+            "regions": {
+                "BARMM": {
+                    "BASILAN": 19962,
+                    "LANAO DEL SUR": 43756
+                },
+                "CORDILLERA ADMINISTRATIVE REGION": {
+                    "ABRA": 3583,
+                    "APAYAO": 1825
+                },
+                "NATIONAL CAPITAL REGION": {
+                    "NCR - FOURTH DISTRICT": 320554,
+                    "NCR - MANILA": 147253
+                },
+                "REGION I": {
+                    "ILOCOS NORTE": 7973,
+                    "ILOCOS SUR": 12606
+                },
+                "REGION II": {
+                    "BATANES": 3511,
+                    "CAGAYAN": 41863
+                },
+                "REGION III": {
+                    "AURORA": 20347,
+                    "BATAAN": 64899
+                },
+                "REGION IV-A": {
+                    "BATANGAS": 396911,
+                    "CAVITE": 297033
+                },
+                "REGION IV-B": {
+                    "MARINDUQUE": 33648,
+                    "OCCIDENTAL MINDORO": 55845
+                },
+                "REGION IX": {
+                    "ZAMBOANGA DEL NORTE": 61310,
+                    "ZAMBOANGA DEL SUR": 62106
+                },
+                "REGION V": {
+                    "ALBAY": 444396,
+                    "CAMARINES NORTE": 171125
+                },
+                "REGION VI": {
+                    "AKLAN": 91665,
+                    "ANTIQUE": 103175
+                },
+                "REGION VII": {
+                    "BOHOL": 75125,
+                    "CEBU": 331836
+                },
+                "REGION VIII": {
+                    "BILIRAN": 8270,
+                    "EASTERN SAMAR": 66360
+                },
+                "REGION X": {
+                    "BUKIDNON": 48833,
+                    "CAMIGUIN": 1823
+                },
+                "REGION XI": {
+                    "DAVAO DE ORO": 11027,
+                    "DAVAO DEL NORTE": 10466
+                },
+                "REGION XII": {
+                    "COTABATO": 24034,
+                    "SARANGANI": 14816
+                },
+                "REGION XIII": {
+                    "AGUSAN DEL NORTE": 22066,
+                    "AGUSAN DEL SUR": 13570
+                }
+            }
+        },
+        "Sara Duterte": {
+            "regions": {
+                "BARMM": {
+                    "BASILAN": 169364,
+                    "LANAO DEL SUR": 264324
+                },
+                "CORDILLERA ADMINISTRATIVE REGION": {
+                    "ABRA": 138706,
+                    "APAYAO": 54077
+                },
+                "NATIONAL CAPITAL REGION": {
+                    "NCR - FOURTH DISTRICT": 742007,
+                    "NCR - MANILA": 402676
+                },
+                "REGION I": {
+                    "ILOCOS NORTE": 342554,
+                    "ILOCOS SUR": 366454
+                },
+                "REGION II": {
+                    "BATANES": 4523,
+                    "CAGAYAN": 481655
+                },
+                "REGION III": {
+                    "AURORA": 73435,
+                    "BATAAN": 286358
+                },
+                "REGION IV-A": {
+                    "BATANGAS": 668146,
+                    "CAVITE": 1031113
+                },
+                "REGION IV-B": {
+                    "MARINDUQUE": 54324,
+                    "OCCIDENTAL MINDORO": 106750
+                },
+                "REGION IX": {
+                    "ZAMBOANGA DEL NORTE": 365010,
+                    "ZAMBOANGA DEL SUR": 642210
+                },
+                "REGION V": {
+                    "ALBAY": 144717,
+                    "CAMARINES NORTE": 70089
+                },
+                "REGION VI": {
+                    "AKLAN": 140172,
+                    "ANTIQUE": 111309
+                },
+                "REGION VII": {
+                    "BOHOL": 594024,
+                    "CEBU": 1772999
+                },
+                "REGION VIII": {
+                    "BILIRAN": 62717,
+                    "EASTERN SAMAR": 119235
+                },
+                "REGION X": {
+                    "BUKIDNON": 595898,
+                    "CAMIGUIN": 49359
+                },
+                "REGION XI": {
+                    "DAVAO DE ORO": 378850,
+                    "DAVAO DEL NORTE": 498055
+                },
+                "REGION XII": {
+                    "COTABATO": 549878,
+                    "SARANGANI": 184130
+                },
+                "REGION XIII": {
+                    "AGUSAN DEL NORTE": 321431,
+                    "AGUSAN DEL SUR": 293717
+                }
+            }
+        }
+    }
+}

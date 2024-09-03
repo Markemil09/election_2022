@@ -1,0 +1,148 @@
+{
+    "presidential_candidates": {
+        "Ferdinand Marcos Jr.": {
+            "regions": {
+                "BARMM": {
+                    "BASILAN": 27374,
+                    "LANAO DEL SUR": 10520
+                },
+                "CORDILLERA ADMINISTRATIVE REGION": {
+                    "ABRA": 12386,
+                    "APAYAO": 15610
+                },
+                "NATIONAL CAPITAL REGION": {
+                    "NCR - FOURTH DISTRICT": 359165,
+                    "NCR - MANILA": 10631
+                },
+                "REGION I": {
+                    "ILOCOS NORTE": 35535,
+                    "ILOCOS SUR": 6900
+                },
+                "REGION II": {
+                    "BATANES": 2431,
+                    "CAGAYAN": 30622
+                },
+                "REGION III": {
+                    "AURORA": 16733,
+                    "BATAAN": 61952
+                },
+                "REGION IV-A": {
+                    "BATANGAS": 13771,
+                    "CAVITE": 36981
+                },
+                "REGION IV-B": {
+                    "MARINDUQUE": 17339,
+                    "OCCIDENTAL MINDORO": 12304
+                },
+                "REGION IX": {
+                    "ZAMBOANGA DEL NORTE": 22708,
+                    "ZAMBOANGA DEL SUR": 92325
+                },
+                "REGION V": {
+                    "ALBAY": 9612,
+                    "CAMARINES NORTE": 11050
+                },
+                "REGION VI": {
+                    "AKLAN": 12977,
+                    "ANTIQUE": 11792
+                },
+                "REGION VII": {
+                    "BOHOL": 13023,
+                    "CEBU": 22312
+                },
+                "REGION VIII": {
+                    "BILIRAN": 24251,
+                    "EASTERN SAMAR": 5333
+                },
+                "REGION X": {
+                    "BUKIDNON": 30388,
+                    "CAMIGUIN": 9654
+                },
+                "REGION XI": {
+                    "DAVAO DE ORO": 54122,
+                    "DAVAO DEL NORTE": 67199
+                },
+                "REGION XII": {
+                    "COTABATO": 47740,
+                    "SARANGANI": 22543
+                },
+                "REGION XIII": {
+                    "AGUSAN DEL NORTE": 125535,
+                    "AGUSAN DEL SUR": 27277
+                }
+            }
+        },
+        "Leni Robredo": {
+            "regions": {
+                "BARMM": {
+                    "BASILAN": 13512,
+                    "LANAO DEL SUR": 17784
+                },
+                "CORDILLERA ADMINISTRATIVE REGION": {
+                    "ABRA": 304,
+                    "APAYAO": 529
+                },
+                "NATIONAL CAPITAL REGION": {
+                    "NCR - FOURTH DISTRICT": 235459,
+                    "NCR - MANILA": 14034
+                },
+                "REGION I": {
+                    "ILOCOS NORTE": 371,
+                    "ILOCOS SUR": 2350
+                },
+                "REGION II": {
+                    "BATANES": 954,
+                    "CAGAYAN": 2010
+                },
+                "REGION III": {
+                    "AURORA": 5218,
+                    "BATAAN": 22360
+                },
+                "REGION IV-A": {
+                    "BATANGAS": 23556,
+                    "CAVITE": 19577
+                },
+                "REGION IV-B": {
+                    "MARINDUQUE": 22497,
+                    "OCCIDENTAL MINDORO": 10094
+                },
+                "REGION IX": {
+                    "ZAMBOANGA DEL NORTE": 13222,
+                    "ZAMBOANGA DEL SUR": 4246
+                },
+                "REGION V": {
+                    "ALBAY": 74158,
+                    "CAMARINES NORTE": 24165
+                },
+                "REGION VI": {
+                    "AKLAN": 28626,
+                    "ANTIQUE": 14731
+                },
+                "REGION VII": {
+                    "BOHOL": 3606,
+                    "CEBU": 13817
+                },
+                "REGION VIII": {
+                    "BILIRAN": 4751,
+                    "EASTERN SAMAR": 7749
+                },
+                "REGION X": {
+                    "BUKIDNON": 4405,
+                    "CAMIGUIN": 1022
+                },
+                "REGION XI": {
+                    "DAVAO DE ORO": 4361,
+                    "DAVAO DEL NORTE": 2636
+                },
+                "REGION XII": {
+                    "COTABATO": 12600,
+                    "SARANGANI": 3727
+                },
+                "REGION XIII": {
+                    "AGUSAN DEL NORTE": 2482,
+                    "AGUSAN DEL SUR": 23312
+                }
+            }
+        }
+    }
+}
