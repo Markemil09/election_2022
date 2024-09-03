@@ -94,16 +94,16 @@ const VpElectionResultsTable = () => {
         totalsPerRegion['Mindanao'] = totalsPerIsland['Mindanao'];
         
         setTotals(totalsPerRegion);
-        setTotalKiko(totalsPerRegion[selectedRegion]?.Kiko.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0);
-        setTotalSarah(totalsPerRegion[selectedRegion]?.Sarah.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0)
+        setTotalKiko(totalsPerRegion[selectedRegion]?.Kiko || 0);
+        setTotalSarah(totalsPerRegion[selectedRegion]?.Sarah || 0)
         setRegions(['ALL REGIONS', 'Luzon', 'Visayas', 'Mindanao', ...Array.from(availableRegions)]);
       }, []);
       
   
     const handleRegionChange = (event) => {
       setSelectedRegion(event.target.value);
-      setTotalKiko(totals[event.target.value]?.Kiko.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0);
-      setTotalSarah(totals[event.target.value]?.Sarah.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0);
+      setTotalKiko(totals[event.target.value]?.Kiko || 0);
+      setTotalSarah(totals[event.target.value]?.Sarah || 0);
       setCandidateSarah('SARA DUTERTE');
       setCandidateKiko('KIKO PANGILINAN');
     };
@@ -147,13 +147,13 @@ const VpElectionResultsTable = () => {
             reversedVote = beforeMid + middle + afterMid;
             }
             reversedVotes.push(reversedVote);
-        return reversedVotes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return parseFloat(reversedVotes);
     }
 
     const sortedCandidates = [
         { name: candidateKiko, votes: totalKiko },
         { name: candidateSarah, votes: totalSarah }
-      ].sort((a, b) => parseFloat(b.votes.replace(/,/g, '')) - parseFloat(a.votes.replace(/,/g, '')));
+      ].sort((a, b) => b.votes - a.votes);
 
     const handleReverse = () => {
         const kikoReverse = handleReverseName(candidateKiko);

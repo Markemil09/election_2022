@@ -94,16 +94,16 @@ const ElectionResultsTable = () => {
         totalsPerRegion['Mindanao'] = totalsPerIsland['Mindanao'];
         
         setTotals(totalsPerRegion);
-        setTotalMarcos(totalsPerRegion[selectedRegion]?.Marcos.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0);
-        setTotalLeni(totalsPerRegion[selectedRegion]?.Robredo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0)
+        setTotalMarcos(totalsPerRegion[selectedRegion]?.Marcos.toString() || 0);
+        setTotalLeni(totalsPerRegion[selectedRegion]?.Robredo.toString() || 0)
         setRegions(['ALL REGIONS', 'Luzon', 'Visayas', 'Mindanao', ...Array.from(availableRegions)]);
       }, []);
       
   
     const handleRegionChange = (event) => {
       setSelectedRegion(event.target.value);
-      setTotalMarcos(totals[event.target.value]?.Marcos.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0);
-      setTotalLeni(totals[event.target.value]?.Robredo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || 0);
+      setTotalMarcos(totals[event.target.value]?.Marcos.toString() || 0);
+      setTotalLeni(totals[event.target.value]?.Robredo.toString()  || 0);
       setCandidateLeni('LENI ROBREDO');
       setCandidateMarcos('BONGBONG MARCOS');
     };
@@ -147,13 +147,13 @@ const ElectionResultsTable = () => {
             reversedVote = beforeMid + middle + afterMid;
             }
             reversedVotes.push(reversedVote);
-        return reversedVotes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return parseFloat(reversedVotes);
     }
 
     const sortedCandidates = [
         { name: candidateMarcos, votes: totalMarcos },
         { name: candidateLeni, votes: totalLeni }
-      ].sort((a, b) => parseFloat(b.votes.replace(/,/g, '')) - parseFloat(a.votes.replace(/,/g, '')));
+      ].sort((a, b) => b.votes - a.votes);
 
     const handleReverse = () => {
         const marcosReverse = handleReverseName(candidateMarcos);
